@@ -7,7 +7,6 @@ import NotFound from './components/NotFound';
 
 ReactDOM.render((
     <Router history={browserHistory}>
-        <Route path="/" component={App}/>
-        <Route path="*" component={NotFound}/>
+        <Route path="*" component={App}/>
     </Router>
 ), document.getElementById('content'));
