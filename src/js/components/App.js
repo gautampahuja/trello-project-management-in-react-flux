@@ -12,7 +12,6 @@ import Table from 'react-bootstrap/lib/Table';
 import AddCard from '../components/AddCard';
 import AddList from '../components/AddList';
 import ShowCardDetails from '../components/ShowCardDetails'
-var closeImg = '../../images/close.png';
 var flag = true;
 var App = React.createClass({
     getInitialState: function () {
@@ -77,7 +76,7 @@ var App = React.createClass({
                                                     <h4 className="status">{Listobject.title}</h4>
                                                     <img
                                                         onClick={self.removeList.bind(null, Listobject.id )}
-                                                        className="closeImg" src={closeImg}
+                                                        className="closeImg" src='https://cdn0.iconfinder.com/data/icons/most-useful-icons/50/CLOSE-512.png'
                                                         alt="closeImg"/>
                                                     {
                                                         Listobject.tasks.map(function (taskObject, j) {

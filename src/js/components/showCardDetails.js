@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import { Router, Route, hashHistory, Redirect, browserHistory } from 'react-router';
 import 'bootstrap/less/bootstrap.less';
 import '../../styles/app.less';
-var editImg = '../../images/edit_icon.png';
-var closeImg = '../../images/close.png';
-
 var showCardDetails = React.createClass({
     getInitialState: function () {
         return {
@@ -88,11 +85,11 @@ var showCardDetails = React.createClass({
                                     <h4 className="status">{this.props.taskObject.status}</h4>
                                     <img
                                         onClick={this.props.removeCard.bind(null, this.props.cardId, this.props.Listobject.id )}
-                                        className="closeImg" src={closeImg}
+                                        className="closeImg" src='https://cdn0.iconfinder.com/data/icons/most-useful-icons/50/CLOSE-512.png'
                                         alt="closeImg"/>
                                     <img
                                         onClick={this.clickCard}
-                                        className="closeImg" src={editImg}
+                                        className="closeImg" src='https://cdn1.iconfinder.com/data/icons/turbo-outline/50/Edit-512.png'
                                         alt="editImg"/>
                                     <span className="description">{this.props.taskObject.description}</span>
                                     <h4 className="UserName">{this.props.taskObject.UserName}</h4>
